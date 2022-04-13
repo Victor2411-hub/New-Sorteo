@@ -45,6 +45,18 @@
         openChildForm(New Empleados())
     End Sub
 
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        If Panel2.Visible = True Then
+            Panel2.Visible = False
+        End If
+    End Sub
+
+
+
+    Private Sub PanelChildForm_Paint(sender As Object, e As PaintEventArgs) Handles PanelChildForm.Paint
+
+    End Sub
+
     'Private Sub Pantalla_Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     '    Button1.FlatStyle = FlatStyle.Flat
     '    Button2.FlatStyle = FlatStyle.Flat

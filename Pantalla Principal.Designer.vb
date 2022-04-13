@@ -180,6 +180,7 @@ Partial Class Pantalla_Principal
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelChildForm)
         Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "Pantalla_Principal"
         Me.Text = "Menú"

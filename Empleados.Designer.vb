@@ -74,7 +74,7 @@ Partial Class Empleados
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(260, 42)
         Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Contraceña:"
+        Me.Label3.Text = "Contraseña:"
         '
         'Label2
         '

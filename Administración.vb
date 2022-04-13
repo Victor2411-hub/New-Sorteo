@@ -5,11 +5,7 @@
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         Comprobar()
 
-        If con.State = ConnectionState.Open Then
-            con.Close()
-        End If
-
-        sql = "Select * From Empleados Where Nombre= '" & TxtUser.Text & "' And Clave= '" & TxtPass.Text & "'"
+        sql = "Select * From Empleados Where Nombre= '" & TxtUser.Text & "' And Contraceña= '" & TxtPass.Text & "'"
 
         Try
             openCon()
@@ -25,8 +21,6 @@
             con.Close()
         Else
             ErrorProvider1.SetError(Button1, "Usuario o Contraceña incorrectos")
-
-
         End If
     End Sub
 
@@ -45,14 +39,22 @@
 
     End Function
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TxtPass.TextChanged
-
-    End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        If con.State = ConnectionState.Open Then
+            con.Close()
+        End If
+
+        Try
+            Comprobarcon()
+            MsgBox("La conección a la base de datos fue exitosa!")
+        Catch ex As Exception
+            MsgBox("Error al conectar con la base de datos")
+            Return
+        End Try
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
