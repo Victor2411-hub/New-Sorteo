@@ -4,6 +4,7 @@
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
         If Panel2.Visible = True Then
             Panel2.Visible = False
         Else
@@ -12,8 +13,8 @@
         End If
     End Sub
 
-    Private currentForm As Form = Nothing
-    Private Sub openChildForm(childForm As Form)
+    Public currentForm As Form = Nothing
+    Public Sub openChildForm(childForm As Form)
         If currentForm IsNot Nothing Then currentForm.Close()
         currentForm = childForm
         childForm.TopLevel = False
