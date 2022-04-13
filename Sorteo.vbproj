@@ -7,6 +7,7 @@
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <ApplicationIcon>WhatsApp_Image_2022-04-12_at_11.48.21_AM-removebg-preview.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
