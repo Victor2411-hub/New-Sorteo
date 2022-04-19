@@ -3,16 +3,6 @@
 
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-
-        If Panel2.Visible = True Then
-            Panel2.Visible = False
-        Else
-            Panel2.BringToFront()
-            Panel2.Visible = True
-        End If
-    End Sub
-
     Public currentForm As Form = Nothing
     Public Sub openChildForm(childForm As Form)
         If currentForm IsNot Nothing Then currentForm.Close()
@@ -46,15 +36,37 @@
         openChildForm(New Empleados())
     End Sub
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If Panel2.Visible = True Then
+            Panel2.Visible = False
+        Else
+            Panel2.BringToFront()
+            Panel2.Visible = True
+        End If
+
+        If Panel9.Visible = True Then
+            Panel9.Visible = False
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If Panel9.Visible = True Then
+            Panel9.Visible = False
+        Else
+            Panel9.BringToFront()
+            Panel9.Visible = True
+        End If
+
         If Panel2.Visible = True Then
             Panel2.Visible = False
         End If
     End Sub
 
-
-
     Private Sub PanelChildForm_Paint(sender As Object, e As PaintEventArgs) Handles PanelChildForm.Paint
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 
