@@ -9,6 +9,11 @@
     <MyType>WindowsForms</MyType>
     <ApplicationIcon>WhatsApp_Image_2022-04-12_at_11.48.21_AM-removebg-preview.ico</ApplicationIcon>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
 
   <ItemGroup>

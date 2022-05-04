@@ -62,17 +62,24 @@
         End If
     End Sub
 
+    Private Sub Panel9_Paint(sender As Object, e As PaintEventArgs) Handles Panel9.Paint
+
+    End Sub
+
     Private Sub PanelChildForm_Paint(sender As Object, e As PaintEventArgs) Handles PanelChildForm.Paint
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        PanelChildForm.Visible = True
+        Panel9.Visible = False
+        openChildForm(New Temp())
     End Sub
 
-    'Private Sub Pantalla_Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    '    Button1.FlatStyle = FlatStyle.Flat
-    '    Button2.FlatStyle = FlatStyle.Flat
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        PanelChildForm.Visible = True
+        Panel9.Visible = False
+        openChildForm(New Seleccion())
+    End Sub
 
-    ' End Sub
 End Class

@@ -38,16 +38,19 @@ Partial Class Pantalla_Principal
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PanelChildForm = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel16 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.PanelChildForm.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel9.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -225,6 +228,7 @@ Partial Class Pantalla_Principal
         '
         Me.PanelChildForm.AutoSize = True
         Me.PanelChildForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.PanelChildForm.Controls.Add(Me.PictureBox2)
         Me.PanelChildForm.ForeColor = System.Drawing.Color.Transparent
         Me.PanelChildForm.Location = New System.Drawing.Point(98, 76)
         Me.PanelChildForm.Name = "PanelChildForm"
@@ -232,52 +236,62 @@ Partial Class Pantalla_Principal
         Me.PanelChildForm.TabIndex = 5
         Me.PanelChildForm.Visible = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.Sorteo.My.Resources.Resources.WhatsApp_Image_2022_04_12_at_11_48_21_AM_removebg_preview
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Location = New System.Drawing.Point(223, 127)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(348, 201)
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
         'Panel9
         '
         Me.Panel9.AutoScroll = True
         Me.Panel9.AutoSize = True
         Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(23, Byte), Integer))
         Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Panel9.Controls.Add(Me.Panel16)
         Me.Panel9.Controls.Add(Me.Panel11)
-        Me.Panel9.Controls.Add(Me.Panel12)
-        Me.Panel9.Controls.Add(Me.Button7)
+        Me.Panel9.Controls.Add(Me.Button9)
         Me.Panel9.Controls.Add(Me.Button8)
         Me.Panel9.ForeColor = System.Drawing.Color.Transparent
-        Me.Panel9.Location = New System.Drawing.Point(88, 358)
+        Me.Panel9.Location = New System.Drawing.Point(94, 358)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(211, 110)
+        Me.Panel9.Size = New System.Drawing.Size(211, 94)
         Me.Panel9.TabIndex = 5
         Me.Panel9.Visible = False
+        '
+        'Panel16
+        '
+        Me.Panel16.BackColor = System.Drawing.Color.FromArgb(CType(CType(113, Byte), Integer), CType(CType(187, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.Panel16.Location = New System.Drawing.Point(3, 48)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(10, 36)
+        Me.Panel16.TabIndex = 5
         '
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(113, Byte), Integer), CType(CType(187, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Panel11.Location = New System.Drawing.Point(5, 61)
+        Me.Panel11.Location = New System.Drawing.Point(3, 6)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(10, 36)
         Me.Panel11.TabIndex = 4
         '
-        'Panel12
+        'Button9
         '
-        Me.Panel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(113, Byte), Integer), CType(CType(187, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Panel12.Location = New System.Drawing.Point(5, 13)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(10, 36)
-        Me.Panel12.TabIndex = 3
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Button7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(113, Byte), Integer), CType(CType(187, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button7.Location = New System.Drawing.Point(5, 13)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(200, 36)
-        Me.Button7.TabIndex = 0
-        Me.Button7.Text = "Temporizador"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.Button9.BackColor = System.Drawing.Color.Transparent
+        Me.Button9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(113, Byte), Integer), CType(CType(187, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button9.Location = New System.Drawing.Point(8, 48)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(200, 36)
+        Me.Button9.TabIndex = 0
+        Me.Button9.Text = "Temporizador"
+        Me.Button9.UseVisualStyleBackColor = False
         '
         'Button8
         '
@@ -286,7 +300,7 @@ Partial Class Pantalla_Principal
         Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(113, Byte), Integer), CType(CType(187, Byte), Integer), CType(CType(198, Byte), Integer))
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button8.Location = New System.Drawing.Point(5, 61)
+        Me.Button8.Location = New System.Drawing.Point(7, 6)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(200, 36)
         Me.Button8.TabIndex = 1
@@ -329,11 +343,13 @@ Partial Class Pantalla_Principal
         Me.MaximizeBox = False
         Me.Name = "Pantalla_Principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Menú"
+        Me.Text = "Play Lottery"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        Me.PanelChildForm.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel9.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -356,10 +372,11 @@ Partial Class Pantalla_Principal
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel11 As Panel
-    Friend WithEvents Panel12 As Panel
-    Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Panel16 As Panel
+    Friend WithEvents Button9 As Button
 End Class
